@@ -1,0 +1,100 @@
+:root {
+  --secondary: hsl(75, 94%, 57%);
+  --primary: hsl(0, 0%, 100%);
+  --bg-tertiary: hsl(0, 0%, 20%);
+  --bg-secondary: hsl(0, 0%, 12%);
+  --bg-primary: hsl(0, 0%, 8%);
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+
+  margin: 0;
+  background-color: var(--bg-primary);
+  color: var(--primary);
+  font-family: "font-regular", sans-serif;
+}
+
+@font-face {
+  font-family: "font-regular";
+  src: url("assets/fonts/static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font-semibold";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "font-bold";
+  src: url("assets/fonts//static/Inter-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.625rem;
+
+  width: 22rem;
+  background-color: var(--bg-secondary);
+  border-radius: 0.625rem;
+  padding: 2.5rem 0;
+}
+
+.container img {
+  border-radius: 3.125rem;
+  width: 5rem;
+  margin-bottom: 1.25rem;
+}
+
+.container h1 {
+  margin: 0;
+  font-size: 1.563rem;
+  font-weight: 700;
+}
+
+.container p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+#location {
+  color: var(--secondary);
+  margin: 0;
+  font-weight: 600;
+}
+
+.container a {
+  background-color: var(--bg-tertiary);
+  text-decoration: none;
+  color: var(--primary);
+  width: 18rem;
+  border-radius: 0.313rem;
+  text-align: center;
+  padding: 0.625rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.container a:hover {
+  background-color: var(--secondary);
+  color: var(--bg-secondary);
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 18rem;
+  }
+  .container a {
+    width: 15rem;
+  }
+}
