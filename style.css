@@ -38,7 +38,7 @@ body {
   font-style: normal;
 }
 
-.container {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,19 +50,19 @@ body {
   padding: 2.5rem 0;
 }
 
-.container img {
+main img {
   border-radius: 3.125rem;
   width: 5rem;
   margin-bottom: 1.25rem;
 }
 
-.container h1 {
+main h1 {
   margin: 0;
   font-size: 1.563rem;
   font-weight: 700;
 }
 
-.container p {
+main p {
   font-size: 0.875rem;
   font-weight: 400;
 }
@@ -73,7 +73,7 @@ body {
   font-weight: 600;
 }
 
-.container a {
+main a {
   background-color: var(--bg-tertiary);
   text-decoration: none;
   color: var(--primary);
@@ -83,18 +83,19 @@ body {
   padding: 0.625rem 0;
   font-size: 0.875rem;
   font-weight: 600;
+  transition: 0.5s ease;
 }
 
-.container a:hover {
+main a:hover {
   background-color: var(--secondary);
   color: var(--bg-secondary);
 }
 
 @media (max-width: 375px) {
-  .container {
+  main {
     width: 18rem;
   }
-  .container a {
+  main a {
     width: 15rem;
   }
 }
